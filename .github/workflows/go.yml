@@ -28,7 +28,6 @@ jobs:
     - name: Build
       working-directory: go-feather-action
       run: |
-        cd go-feather-action
         go build -v -o feather-binary ./cmd/fledge
 
     - name: Upload Binary Artifact
