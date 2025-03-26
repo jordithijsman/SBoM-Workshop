@@ -26,6 +26,7 @@ jobs:
         go-version: '1.20'
 
     - name: Build
+      working-directory: go-feather-action
       run: |
         cd go-feather-action
         go build -v -o feather-binary ./cmd/fledge
@@ -34,4 +35,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: feather-binary
-        path: feather-binary
+        path: go-feather-action/feather-binary
