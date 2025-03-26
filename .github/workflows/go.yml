@@ -28,7 +28,7 @@ jobs:
     - name: Build
       run: |
         cd go-feather-action
-        go build -v -o feather ./go-feather-action/cmd/fledge
+        go build -v -o feather ./cmd/fledge
 
     - name: Upload Binary Artifact
       uses: actions/upload-artifact@v4
