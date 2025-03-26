@@ -13,8 +13,7 @@ jobs:
 
   build:
     permissions:
-     actions: read
-     contents: write
+     contents: read
      id-token: write
      
     runs-on: ubuntu-latest
